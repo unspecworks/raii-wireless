@@ -1,5 +1,3 @@
-> [!WARNING]
-> Work in Progress
 
 ![RAII](./images/raii.webp)
 
@@ -17,6 +15,7 @@ RAII-Wireless is a customized variant of [Sweep Bling LP](https://github.com/dav
 
 * [Cases](./cases)
 * [PCB](./pcb)
+* [Build Guide](./BUILD_GUIDES.md)
 
 ### Firmware
 * **ZMK Firmware**: You can use the Cradio firmware, same as the Sweep.
