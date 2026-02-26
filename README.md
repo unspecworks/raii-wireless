@@ -11,14 +11,15 @@ RAII-Wireless is a customized variant of [Sweep Bling LP](https://github.com/dav
 * Added support for Kailh Choc V2
 * Compatible with Nice!Nano v2 or Pro Micro MCUs
 
-## Links
+## Project Structure
 
-* [Cases](./cases)
-* [PCB](./pcb)
-* [Build Guide](./BUILD_GUIDES.md)
+*   **[PCB](./pcb)**: KiCad design files.
+*   **[Cases](./cases)**: 3D printable case files (STEP).
+*   **[Images](./images)**: Gallery of the RAII Wireless keyboard.
+*   **[Build Guide](./BUILD_GUIDES.md)**: Detailed assembly instructions and Bill of Materials.
 
 ### Firmware
-* **ZMK Firmware**: You can use the Cradio firmware, same as the Sweep.
+* **ZMK Firmware**: You can use the Cradio firmware, which is the same as the Sweep's.
 
 ### Related
 * **Wired Version**: [raii](https://github.com/unspecworks/raii) (Wired version with integrated RP2040)
@@ -32,3 +33,5 @@ This project is sponsored by [PCBWay](https://www.pcbway.com/).
 ## License
 
 [SOLDERPAD HARDWARE LICENSE VERSION 2.1](./LICENSE)
+
+![RAII](./images/raiiww-4.webp)

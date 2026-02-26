@@ -2,72 +2,60 @@
 
 ## Bill of Materials (BOM)
 
-*   **Microcontroller**: Nice!Nano v2 (2 qty)
-*   **Switches**:
-    *   Reset Tact Switch: B3U-1000P (2 qty)
-    *   Power Switch: MK-12C02 (2 qty)
-*   **Sockets**: Kailh Choc Hotswap Sockets (34 qty)
-*   **Keys**:
-    *   Kailh Choc v1 or v2 Switches (34 qty)
-    *   Keycaps (34 qty) - *Note: Please ensure keycaps are compatible with Choc spacing.*
-*   **Battery**: 3.7V LiPo Battery (2 qty)
-    *   *Recommended sizes:*
-        *   **301230**: For installation directly beneath the Nice!Nano MCU.
-        *   **351636**: For use with the case.
-*   **(Optional) Battery Connector**: PH2.0 or compatible connector (2 qty)
-*   **(Optional - for Case)**: M2x6 Screws (8 qty)
-*   **Feet**: Rubber feet or anti-slip pads
+| Item | Specification | Quantity | Notes |
+| :--- | :--- | :--- | :--- |
+| **Microcontroller** | Nice!Nano v2 | 2 | Pro Micro compatible |
+| **Switches** | Kailh Choc v1 or v2 | 34 | |
+| **Hotswap Sockets** | Kailh Choc Hotswap | 34 | |
+| **Keycaps** | Choc Compatible | 34 | Ensure Choc spacing compatibility |
+| **Reset Switch** | B3U-1000P | 2 | Tactile switch |
+| **Power Switch** | MK-12C02 | 2 | Slide switch |
+| **Battery** | 3.7V LiPo | 2 | 301230 (under MCU) or 351636 (with case) |
+| **Screws** | M2x6mm | 8 | Required for case build |
+| **Feet** | Rubber pads | - | Anti-slip |
+| **Battery Connector**| PH2.0 (Optional) | 2 | Direct soldering recommended for cases |
 
 ---
 
 ## Assembly Instructions
 
-This keyboard supports two build configurations: **With Case** and **Without Case**. Please follow the instructions relevant to your chosen configuration.
+Choose one of the two build configurations below based on whether you are using a case.
 
-### Option 1: Building With a Case
+### Option A: With Case
 
-1.  **MCU Installation**:
-    *   Solder the Nice!Nano MCU directly to the bottom side (the side with hotswap sockets) *without* pin headers.
-    *   **Orientation**: The MCU components must face **outwards** (away from the PCB).
-    *   **Insulation**: Since the MCU is soldered directly to the PCB, you **must** insulate the underside of the MCU (e.g., using Kapton tape) to prevent potential short circuits. While typically safe, this is a necessary precaution.
-    *   **Trimming**: Trim any protruding pins on both the front and back of the PCB to ensure a flush fit.
+![raii-wireless-case](./images/raiiww-2.webp)
 
-2.  **Power Switch**:
-    *   Install the power switch on the side opposite to the MCU (the top/switch side).
+This method involves soldering the MCU directly to the PCB to achieve the slimmest possible profile.
 
-3.  **Reset Switch**:
-    *   Install the reset switch on the bottom side. The bottom case includes a leaf spring mechanism designed to actuate the reset switch from this position.
+1.  **MCU Installation**
+    *   **Side**: Solder to the **bottom** (socket side).
+    *   **Orientation**: Components must face **outwards**.
+    *   **Safety**: Insulate the MCU underside (e.g., with Kapton tape) and trim all pins flush to prevent shorts.
+2.  **Switches**
+    *   **Power**: Install on the **top** (switch side).
+    *   **Reset**: Install on the **bottom** (the case features a leaf spring to actuate this switch).
+3.  **Battery**
+    *   **Connection**: Direct soldering is recommended.
+    *   **Jumpers**: Bridge the battery jumpers on the PCB before connecting.
+4.  **Final Steps**
+    *   Place the top case, install switches through the case, attach the bottom case, and secure with M2x6 screws.
 
-4.  **Battery Connection**:
-    *   When using the case, finding a suitably sized connector may be difficult. Therefore, **direct soldering** of the battery cables is recommended.
-    *   **Jumper Configuration**: Bridge the appropriate battery jumpers on the PCB (verifying the front/back indicators).
-    *   **Connection**: Solder the battery cables to the designated pads on the bottom side (hotswap socket side).
+---
 
-5.  **Final Assembly**:
-    *   Place the top case over the PCB.
-    *   Install the switches through the case into the sockets.
-    *   Attach the bottom case and secure the assembly using the M2x6 screws.
-    *   Attach feet to the bottom of the case.
+### Option B: Without Case (Standard Build)
 
-### Option 2: Building Without a Case
+![raii-wireless-case](./images/raiiww-5.webp)
 
-1.  **MCU Installation**:
-    *   Solder the MCU to the top side (switch side) using pin headers.
-    *   **Orientation**: The MCU components must face **inwards** (towards the PCB).
-    *   **Suggestion**: Consider using hotswap headers for the MCU or taller headers to create sufficient clearance for a battery underneath.
+A more traditional build using pin headers for the MCU.
 
-2.  **Power Switch**:
-    *   Solder the power switch to either the top or bottom side, depending on your preferred operational position and battery placement.
-
-3.  **Reset Switch**:
-    *   Solder the reset switch to either the top or bottom side, whichever offers easier access.
-
-4.  **Battery Connection**:
-    *   You may use a battery connector or solder the battery directly.
-    *   **Polarity Warning**: If using a connector, strictly verify the polarity to avoid damage.
-    *   **Jumper Configuration**: Bridge the appropriate battery jumpers on the PCB before connecting the battery.
-
-5.  **Final Assembly**:
-    *   Install switches (with or without a plate).
-    *   Attach feet to the bottom of the PCB.
-
+1.  **MCU Installation**
+    *   **Side**: Solder to the **top** (switch side) using pin headers.
+    *   **Orientation**: Components face **inwards** (towards the PCB).
+    *   **Tip**: Use sockets or tall headers if you plan to tuck the battery underneath.
+2.  **Switches**
+    *   **Power/Reset**: Can be installed on either side depending on preference.
+3.  **Battery**
+    *   **Connection**: Use PH2.0 connectors or direct solder.
+    *   **Jumpers**: Bridge the battery jumpers on the PCB first.
+4.  **Final Steps**
+    *   Install switches into hotswap sockets and attach rubber feet directly to the PCB.
