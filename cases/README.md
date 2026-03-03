@@ -16,6 +16,7 @@ Files are provided in STEP format, which is compatible with most 3D CAD software
 
 ### Right Half
 - `RAII_W_R_TOP.step`: Top plate/shell for the right side.
+- `RAII_W_R_TOP_LOGO.step`: Top plate/shell for the right side with logo on the top.
 - `RAII_W_R_BOT.step`: Bottom shell for the right side.
 
 ## Hardware Requirements
